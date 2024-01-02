@@ -39,3 +39,27 @@ The learning rate, denoted as α, is a vital parameter influencing the convergen
 
 Adjusting these parameters thoughtfully is integral to achieving successful training outcomes in both SOM and LVQ, ultimately leading to accurate and robust models.
 
+### 3. Initialize The Training Process for Every Input Vector
+
+- **Calculate the Euclidean Distance:**
+  - The Euclidean distance serves as a measure of dissimilarity or similarity between the input vector and the representative vector for each class. This calculation is fundamental in determining the classification of a data point to its respective class during the training process.
+  
+  - **Euclidean Distance Equation:** One common method involves using the Euclidean Distance equation to quantify the spatial separation between the input vector and the representative vector.
+    \[
+    \text{Euclidean Distance} = \sqrt{\sum_{i=1}^{n} (X_i - R_{i})^2}
+    \]
+
+  - **Squared Euclidean Distance Equation:** Alternatively, the Squared Euclidean Distance equation can also be employed. Squaring the distances can provide greater emphasis on larger deviations, influencing the classification decision.
+    \[
+    \text{Squared Euclidean Distance} = \sum_{i=1}^{n} (X_i - R_{i})^2
+    \]
+
+### Important Considerations:
+
+- **Classification Outcome:** The calculated distance is pivotal in assigning a class label to the input vector. Smaller distances indicate proximity to a particular class, influencing the classification outcome.
+
+- **Algorithm Specifics:** The choice between Euclidean Distance and Squared Euclidean Distance depends on the specifics of the algorithm being used and the characteristics of the dataset.
+
+- **Fine-tuning:** Experimentation with different distance calculation methods may be necessary to optimize the training process for specific tasks or datasets.
+
+This step in the initialization process ensures that the model can appropriately categorize input vectors based on their proximity to representative vectors, laying the groundwork for accurate and effective learning. 
