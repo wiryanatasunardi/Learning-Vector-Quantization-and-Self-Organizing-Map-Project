@@ -100,3 +100,35 @@ Throughout the evaluation process, the test dataset undergoes a comprehensive as
 This evaluation process provides valuable insights into the model's performance on new, previously unseen data. It allows for a comprehensive understanding of how well the model generalizes to real-world scenarios and aids in assessing its effectiveness in classifying instances from the test dataset.
 
 ## Data Analysis On Self-Organizing Map and Linear Vector Quantization
+
+### 1. The Analysis of Self-Organizing Map's Model Evaluation
+
+During the evaluation of the Self-Organizing Map (SOM) model, the clustering of data points can be effectively visualized using a three-dimensional scatter plot. In this visualization, each data point is represented as a marker in the 3D space, with the three dimensions corresponding to specific features or attributes of the data.
+
+![Self-Organizing Map](https://github.com/wiryanatasunardi/Learning-Vector-Quantization-and-Self-Organizing-Map-Project/blob/main/documentation/SOM.jpg)
+
+Upon examination of the scatter plot generated during the evaluation, a clear inference emerges: the Self-Organizing Map (SOM) has effectively produced two distinct clusters within the dataset. The visual representation lets us discern that data points exhibiting similarity have been grouped together, forming cohesive clusters. Each cluster, delineated by the spatial arrangement of data points, encapsulates instances that share common characteristics in the feature space.
+
+Additionally, observing the associated weight change can further elucidate the Self-Organizing Map algorithm's impact on the model. This weight change, integral to the SOM learning process, embodies the adaptive nature of the algorithm. It reflects the adjustments made to the model's internal representation, emphasizing accommodating varying data patterns and refining cluster boundaries.
+
+![Self Organizing Map Weight](https://github.com/wiryanatasunardi/Learning-Vector-Quantization-and-Self-Organizing-Map-Project/blob/main/documentation/SOM%20Weight.jpg)
+
+The presented results reveal a noteworthy phenomenon of weight-shifting observed after 1000 iterations in the Self-Organizing Map (SOM). This dynamic evolution in weights is pivotal for understanding how the model adapts and refines its internal representation over successive iterations.
+
+### 2. Key Observations:
+
+1. **Temporal Evolution of Weights:**
+   - The initial four rows of data represent the weights before the commencement of the training process. These values serve as the baseline or starting point for the SOM model.
+
+   - Subsequently, the next four rows encapsulate the weights after the completion of 1000 iterations. The alterations in these weights highlight the dynamic nature of the SOM as it refines its internal representation based on the input data.
+
+2. **Significance of Weight-Shifting:**
+   - The observed shift in weights underscores the model's capacity to learn and adapt. Changes in the weight values signify the assimilation of information during training, reflecting the SOM's ability to capture underlying patterns within the dataset.
+
+### 3. Interpretation:
+
+By scrutinizing these weight changes, valuable insights are gained into the model's learning trajectory and its responsiveness to the input data. The juxtaposition of weights before and after training provides a tangible representation of the SOM's transformative learning process over the specified number of iterations.
+
+This analysis enhances our understanding of how the Self-Organizing Map dynamically adjusts its internal representation, thereby facilitating the extraction of meaningful patterns from the input data.
+
+
