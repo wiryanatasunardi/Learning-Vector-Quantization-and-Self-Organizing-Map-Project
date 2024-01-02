@@ -46,7 +46,7 @@ Adjusting these parameters thoughtfully is integral to achieving successful trai
   
   - **Euclidean Distance Equation:** One common method involves using the Euclidean Distance equation to quantify the spatial separation between the input vector and the representative vector.
 
-    
+    ![Euclidean Distance](https://github.com/wiryanatasunardi/Learning-Vector-Quantization-and-Self-Organizing-Map-Project/blob/main/documentation/Euclidean%20Distance.jpg)
 
   - **Squared Euclidean Distance Equation:** Alternatively, the Squared Euclidean Distance equation can also be employed. Squaring the distances can provide greater emphasis on larger deviations, influencing the classification decision.
 
