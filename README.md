@@ -58,7 +58,7 @@ Adjusting these parameters thoughtfully is integral to achieving successful trai
   - **Adjust Proximity for Fits:**
     - Conversely, when the output class accurately corresponds to the target class, the data point is brought closer to the target class. This adaptation reinforces correct classifications, allowing the model to capture better the patterns associated with the target class.
 
-  These dynamic updates to the representative vector enable the model to refine its understanding of class relationships iteratively, enhancing its ability to classify data points over successive training iterations accurately.
+      These dynamic updates to the representative vector enable the model to refine its understanding of class relationships iteratively, enhancing its ability to classify data points over successive training iterations accurately.
     
 
 ### Important Considerations:
