@@ -83,10 +83,10 @@ where β is a scaling factor. These equations dictate that the epoch is incremen
 
 Following the update of the learning rate and epoch, a critical step is assessing the training process's stop condition. This evaluation is necessary based on either the cumulative sum of epochs or the specific value of the learning rate. The stop condition serves as a criterion to determine whether the model has reached a satisfactory state, facilitating a controlled and effective conclusion to the training process.
 
-### 5. The Evaluation of The Model
+## The Evaluation of The Model
 Throughout the evaluation process, the test dataset undergoes a comprehensive assessment by computing the Euclidean Distance between the representative vector and each input vector. This method enables the quantification of dissimilarity or similarity between the representative vector and individual data points in the test dataset.
 
-#### Evaluation Steps:
+### Evaluation Steps:
 
 1. **Euclidean Distance Computation:**
    - For each data point in the test dataset, the Euclidean Distance is calculated by measuring the spatial separation between its features and the representative vector. This distance metric provides a quantitative measure of how closely or distantly the input vector aligns with the prototype of its assigned class.
