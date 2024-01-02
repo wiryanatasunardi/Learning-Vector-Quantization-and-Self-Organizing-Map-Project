@@ -49,7 +49,16 @@ Adjusting these parameters thoughtfully is integral to achieving successful trai
     ![Euclidean Distance](https://github.com/wiryanatasunardi/Learning-Vector-Quantization-and-Self-Organizing-Map-Project/blob/main/documentation/Euclidean%20Distance.jpg)
 
   - **Squared Euclidean Distance Equation:** Alternatively, the Squared Euclidean Distance equation can also be employed. Squaring the distances can provide greater emphasis on larger deviations, influencing the classification decision.
+    
+  - **Update The Representative Vector:**
+    During the training process, it is essential to update the representative vector continuously. Specific provisions guide this update to ensure the model's accuracy and adaptability. The key considerations for updating the representative vector are as follows:
+  - **Maintain Proximity for Misfits:**
+    - If the output class does not align with the target class, adjustments are made to keep the data point at a distance from the target class. This ensures that the model recognizes and corrects misclassifications by maintaining separation from the incorrect class.
 
+  - **Adjust Proximity for Fits:**
+    - Conversely, when the output class accurately corresponds to the target class, the data point is brought closer to the target class. This adaptation reinforces correct classifications, allowing the model to capture better the patterns associated with the target class.
+
+These dynamic updates to the representative vector enable the model to refine its understanding of class relationships iteratively, enhancing its ability to classify data points over successive training iterations accurately.
     
 
 ### Important Considerations:
