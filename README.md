@@ -82,3 +82,19 @@ Upon completing the training process, adjustments to the learning rate α and ep
 where β is a scaling factor. These equations dictate that the epoch is incremented by 1, signifying the completion of another training iteration. Simultaneously, the learning rate for the next iteration (t + 1) is determined by scaling the current learning rate ((α(t)) using the factor β.
 
 Following the update of the learning rate and epoch, a critical step is assessing the training process's stop condition. This evaluation is necessary based on either the cumulative sum of epochs or the specific value of the learning rate. The stop condition serves as a criterion to determine whether the model has reached a satisfactory state, facilitating a controlled and effective conclusion to the training process.
+
+### 5. The Evaluation of The Model
+Throughout the evaluation process, the test dataset undergoes a comprehensive assessment by computing the Euclidean Distance between the representative vector and each input vector. This method enables the quantification of dissimilarity or similarity between the representative vector and individual data points in the test dataset.
+
+#### Evaluation Steps:
+
+1. **Euclidean Distance Computation:**
+   - For each data point in the test dataset, the Euclidean Distance is calculated by measuring the spatial separation between its features and the representative vector. This distance metric provides a quantitative measure of how closely or distantly the input vector aligns with the prototype of its assigned class.
+
+2. **Recognition Rate Determination:**
+   - With the Euclidean Distance computed for each test data point, the recognition rate of the test dataset can be established. The recognition rate represents the proportion of correctly identified instances in the test dataset.
+
+3. **Dataset Classification:**
+   - Subsequently, based on the Euclidean Distance values and recognition rate, the test dataset is classified according to the target classes. Data points are assigned to their respective classes based on the calculated distances, reflecting the model's ability to recognize patterns and generalize to unseen instances.
+
+This evaluation process provides valuable insights into the model's performance on new, previously unseen data. It allows for a comprehensive understanding of how well the model generalizes to real-world scenarios and aids in assessing its effectiveness in classifying instances from the test dataset.
