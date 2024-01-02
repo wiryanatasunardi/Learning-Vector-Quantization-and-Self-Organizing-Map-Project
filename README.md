@@ -9,11 +9,11 @@ The architecture of Learning Vector Quantization comprises two distinct layers, 
 ## The Training Method of Self Organizing Map (SOM) and Learning Vector Quantization (LVQ)
 
 
-The dataset employed in this project is the Iris Dataset, comprising 150 data points. Throughout the Learning Vector Quantization (LVQ) training process, given that LVQ operates as a supervised learning method, the network undergoes training by being presented with inputs in the form of training patterns representing the various classes. These training patterns are derived from the initial distribution of output classes, providing the network with labeled examples to learn from. Subsequent to the training phase, Learning Vector Quantization employs this acquired knowledge to classify input vectors by associating them with the appropriate output class. In essence, the input vector is mapped to the corresponding output unit, reflecting the class to which it has been classified based on the learning achieved during the training process.
+The dataset employed in this project is the Iris Dataset, comprising 150 data points. Throughout the Learning Vector Quantization (LVQ) training process, given that LVQ operates as a supervised learning method, the network undergoes training by being presented with inputs in the form of training patterns representing the various classes. These training patterns are derived from the initial distribution of output classes, providing the network with labelled examples to learn from. Subsequent to the training phase, Learning Vector Quantization employs this acquired knowledge to classify input vectors by associating them with the appropriate output class. In essence, the input vector is mapped to the corresponding output unit, reflecting the class to which it has been classified based on the learning achieved during the training process.
 
-## Training Process Parameters for Self Organizing Map and Learning Vector Quantization
+## Training Process Parameters for Self-Organizing Map and Learning Vector Quantization
 
-In order to obtain meaningful results from the training processes of Self Organizing Map (SOM) and Learning Vector Quantization (LVQ), it is crucial to carefully determine and set the parameters outlined below:
+In order to obtain meaningful results from the training processes of Self Organizing Map (SOM) and Learning Vector Quantization (LVQ), it is crucial to determine and set the parameters outlined below carefully:
 
 ### 1. Initialize The Initial Weight
 
@@ -70,3 +70,14 @@ Adjusting these parameters thoughtfully is integral to achieving successful trai
 - **Fine-tuning:** Experimentation with different distance calculation methods may be necessary to optimize the training process for specific tasks or datasets.
 
 This step in the initialization process ensures that the model can appropriately categorize input vectors based on their proximity to representative vectors, laying the groundwork for accurate and effective learning. 
+
+### 4. Update The Learning Rate and Epoch
+
+Upon completing the training process, adjustments to the learning rate α and epoch are crucial for optimizing the model's performance over successive iterations. The updates are governed by the following equations :
+
+**epoch = epoch + 1**
+**α(t+1) = βα(t)**
+
+where β is a scaling factor. These equations dictate that the epoch is incremented by 1, signifying the completion of another training iteration. Simultaneously, the learning rate for the next iteration (t + 1) is determined by scaling the current learning rate ((α(t)) using the factor β.
+
+Following the update of the learning rate and epoch, a critical step is assessing the training process's stop condition. This evaluation is necessary based on either the cumulative sum of epochs or the specific value of the learning rate. The stop condition serves as a criterion to determine whether the model has reached a satisfactory state, facilitating a controlled and effective conclusion to the training process.
