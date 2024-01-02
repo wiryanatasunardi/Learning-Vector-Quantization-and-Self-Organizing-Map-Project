@@ -75,7 +75,8 @@ This step in the initialization process ensures that the model can appropriately
 
 Upon completing the training process, adjustments to the learning rate α and epoch are crucial for optimizing the model's performance over successive iterations. The following equations govern the updates:
 
-**epoch = epoch + 1** \n
+**epoch = epoch + 1**
+
 **α(t+1) = βα(t)**
 
 where β is a scaling factor. These equations dictate that the epoch is incremented by 1, signifying the completion of another training iteration. Simultaneously, the learning rate for the next iteration (t + 1) is determined by scaling the current learning rate ((α(t)) using the factor β.
