@@ -115,7 +115,7 @@ Additionally, observing the associated weight change can further elucidate the S
 
 The presented results reveal a noteworthy phenomenon of weight-shifting observed after 1000 iterations in the Self-Organizing Map (SOM). This dynamic evolution in weights is pivotal for understanding how the model adapts and refines its internal representation over successive iterations.
 
-### 2. Key Observations:
+### Key Observations:
 
 1. **Temporal Evolution of Weights:**
    - The initial four rows of data represent the weights before the commencement of the training process. These values serve as the baseline or starting point for the SOM model.
@@ -125,10 +125,10 @@ The presented results reveal a noteworthy phenomenon of weight-shifting observed
 2. **Significance of Weight-Shifting:**
    - The observed shift in weights underscores the model's capacity to learn and adapt. Changes in the weight values signify the assimilation of information during training, reflecting the SOM's ability to capture underlying patterns within the dataset.
 
-### 3. Interpretation:
+### Interpretation:
 
 By scrutinizing these weight changes, valuable insights are gained into the model's learning trajectory and its responsiveness to the input data. The juxtaposition of weights before and after training provides a tangible representation of the SOM's transformative learning process over the specified number of iterations.
 
 This analysis enhances our understanding of how the Self-Organizing Map dynamically adjusts its internal representation, thereby facilitating the extraction of meaningful patterns from the input data.
 
-
+### 2. The Analysis of Linear Vector Quantization'd Model Evaluation
