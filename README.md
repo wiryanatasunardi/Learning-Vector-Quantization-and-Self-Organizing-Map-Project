@@ -107,7 +107,7 @@ During the evaluation of the Self-Organizing Map (SOM) model, the clustering of 
 
 ![Self-Organizing Map](https://github.com/wiryanatasunardi/Learning-Vector-Quantization-and-Self-Organizing-Map-Project/blob/main/documentation/SOM.jpg)
 
-Upon examination of the scatter plot generated during the evaluation, a clear inference emerges: the Self-Organizing Map (SOM) has effectively produced two distinct clusters within the dataset. The visual representation lets us discern that data points exhibiting similarity have been grouped together, forming cohesive clusters. Each cluster, delineated by the spatial arrangement of data points, encapsulates instances that share common characteristics in the feature space.
+Upon examination of the scatter plot generated during the evaluation, a clear inference emerges: the Self-Organizing Map (SOM) has effectively produced two distinct clusters within the dataset. The visual representation lets us discern that data points exhibiting similarity have been grouped, forming cohesive clusters. Each cluster, delineated by the spatial arrangement of data points, encapsulates instances that share common characteristics in the feature space.
 
 Additionally, observing the associated weight change can further elucidate the Self-Organizing Map algorithm's impact on the model. This weight change, integral to the SOM learning process, embodies the adaptive nature of the algorithm. It reflects the adjustments made to the model's internal representation, emphasizing accommodating varying data patterns and refining cluster boundaries.
 
@@ -131,4 +131,31 @@ By scrutinizing these weight changes, valuable insights are gained into the mode
 
 This analysis enhances our understanding of how the Self-Organizing Map dynamically adjusts its internal representation, thereby facilitating the extraction of meaningful patterns from the input data.
 
-### 2. The Analysis of Linear Vector Quantization'd Model Evaluation
+### 2. The Analysis of Linear Vector Quantization's Model Evaluation
+
+The dataset utilized for evaluating the Linear Vector Quantization (LVQ) model comprises various pieces of information, specifically focusing on attributes like the length and width of flower sepals and petals. Leveraging these attributes as the model features, the dataset is divided, with 70% allocated for training purposes and the remaining 30% reserved for testing.
+
+### Key Components:
+
+1. **Dataset Features:**
+   - The dataset incorporates essential features, including measurements of both the length and width of sepals and petals of flowers. These features serve as the input variables for the LVQ model, providing the necessary information for training and testing.
+
+2. **Data Splitting:**
+   - The dataset is split into two subsets: 70% is designated for training the LVQ model, and 30% is reserved for testing the model's generalization performance. This division ensures a robust assessment of the model's capability to handle new, unseen data.
+
+3. **Results Overview:**
+   - The subsequent section presents the outcomes of the Learning Vector Quantization model's testing phase on the Iris Flower Dataset. These results encapsulate the model's performance metrics and its ability to classify instances within the test set accurately.
+
+## Results Summary:
+
+The results provide insights into the effectiveness of the LVQ model in classifying iris flowers based on their sepal and petal measurements. The evaluation outcomes contribute to a comprehensive understanding of the model's performance and potential utility in real-world applications.
+
+For detailed results and metrics, please refer to the specific section outlining the LVQ model evaluation on the Iris Flower Dataset.
+
+| Input | Learning Rate (α) | Epoch | Recognition Rate|
+| ----- | ----------------- | ----- | ----------------|
+| 150   | 0.0000001         | 1000  | 86.67%          |
+| 150   | 0.001             | 1000  | 84.44%          |
+| 150   | 0.01              | 1000  | 88.89%          |
+| 150   | 0.005             | 1000  | 91.11%          |
+| 150   | 0.1               | 1000  | 93.33%          |
